@@ -1,0 +1,306 @@
+.exit{
+    font-size: 18px;
+    border: 2px solid black;
+    width:40px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.block{
+	margin: 0 auto;
+}
+
+    .orange{
+        background-color: #10726B;
+        color: white;
+    }
+
+.mg{
+
+	margin-top:20px; 
+}
+
+.screen{
+    background-color: #586352;
+    border-radius: 5px;
+    width: 80px;
+    color: white;
+}
+
+
+}
+
+#tasbih{
+	display: none;
+}
+
+li{
+      list-style: none;
+}
+
+#pag1,#pag2,#pag3{
+    padding: 20px;
+    text-transform: uppercase;
+    box-shadow: 5px 7px 30px 0px black;
+}
+}
+
+pag1:hover{
+    box-shadow: 2px 2px 10px 0px black;
+}
+
+pag2:hover{
+    box-shadow: 2px 2px 10px 0px black;
+}
+
+pag3:hover{
+    box-shadow: 2px 2px 10px 0px black;
+}
+
+
+
+
+#relogio{
+        font-size:62px;
+        margin-top: 30px;
+        color: white;
+       background-color: #586352;
+       width: 300px;
+       
+
+}
+
+#suplicas{
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+hr{
+    border: 0.1px solid rgba(0,0,0,0.2);
+}
+
+.logo{
+
+    font-size: 100px;
+    color: green;
+}
+
+.slogan{
+    font-size: 26px !important;
+    color: black;
+
+}
+
+.text{
+    color: #aaa;
+}
+
+.menu{
+    margin-top:;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 50px;
+    bottom: 0px;
+}
+
+    @font-face{
+
+    font-family:BlackOpsOne-Regular;
+    src:url('BlackOpsOne-Regular.ttf');}
+
+    h1{
+        font-family: BlackOpsOne-Regular,sans-serif,Helvetica,serif;
+    }
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+ 
+/* second Modal*/
+    .pop00{
+    display:none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.fechar00{
+    color: #aaaaaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fechar00:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo00{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* second Modal*/
+    .pop{
+	display:none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.fechar{
+	color: #aaaaaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fechar:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo{
+	background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/*terceiro modal*/
+
+.pop0{
+    display:none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.fechar1{
+    color: #aaaaaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fechar1:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo1{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.pop1{
+    display:none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.fechar2{
+    color: #aaaaaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fechar2:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo2{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/*quinto modal*/
+
+.pop2{
+    display:none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.fechar3{
+    color: #aaaaaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fechar3:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo3{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.h2,p{
+    margin: 15px;
+}

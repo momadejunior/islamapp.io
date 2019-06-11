@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>app</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/counter.js"></script>
+</head>
+<body onload="relogio()">
+
+<div class="container">
+<div class="exit" onclick="menu()">&larr;</div>
+<hr>
+	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-lg-12 btn-success block" id="pag2" class="pag2" onclick="statu()">Relógio </div>
+			</div>
+		</div>
+
+<div id="relogio" class="col-md-3 col-lg-3 block text-center screen"></div>
+
+
+
+
+<script type="text/javascript">
+
+		
+function relogio() {
+	// body...
+
+	var data = new Date();
+		var horas = data.getHours();
+		var minutos = data.getMinutes();
+		var segundos = data.getSeconds();
+		
+	if(horas<10){
+			horas = "0"+horas;
+		}
+
+		if(minutos<10){
+			minutos = "0"+minutos;
+		}
+
+		if(segundos<10){
+			segundos = "0"+segundos;
+		}
+
+		document.getElementById('relogio').innerHTML= horas+":"+minutos;
+
+}
+ setInterval("relogio()",1000);
+	</script>
+		
+
+
+</body>
+</html>
