@@ -1,185 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-	<title>app</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/counter.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salat - Orações Diárias</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/counter.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-<div class="container">
-<div class="exit" onclick="menu()">&larr;</div>
-<hr height="5px">
-	</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-lg-12 btn-danger" id="pag3" onclick="todo()"><b>Salat</b></div>
-<div>
-	<p>refere-se as cinco oracoes que cada muculmano 
-	deve realizar diariamente,voltado para Meca.ha cinco salats diarios,e um dos cinco pilares do Islam(arkan al-islam),os salats devem ser ser realizadas em arabe.</p>
-</div>
-			<div>
-				<ul>
-					<li id="myBtn"><a href="#">fajr</a></li>
-					<li id="btn"><a href="#">Zhur</a></li>
-					<li id="btn1"><a href="#">Asr</a></li>
-					<li id="btn2"><a href="#">Maghrib</a></li>
-					<li id="btn3"><a href="#">Isha'a</a></li>
-				</ul>
-			</div>
-		</div>
+    <div class="container text-center">
+        <div class="exit" onclick="menu()">&larr;</div>
+        <hr>
+        <h1 class="text-danger">Salat</h1>
+        <p>As cinco orações diárias que todo muçulmano deve realizar voltado para Meca.</p>
+    </div>
 
-		
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-white bg-danger py-2 text-center" id="pag3" onclick="todo()">
+                <b>Salat - Oração Islâmica</b>
+            </div>
+        </div>
+        <p class="mt-3">O Salat é um dos cinco pilares do Islã e deve ser realizado em árabe. Consiste em cinco orações diárias.</p>
 
-<!-- The Modal -->
-<div id="meumodal0" class="pop00">
+        <ul class="list-group my-3">
+            <li class="list-group-item" id="myBtn">Fajr - Ao alvorecer</li>
+            <li class="list-group-item" id="btn">Zhur - Ao meio-dia</li>
+            <li class="list-group-item" id="btn1">Asr - Entre o meio-dia e o pôr do sol</li>
+            <li class="list-group-item" id="btn2">Maghrib - Logo após o pôr do sol</li>
+            <li class="list-group-item" id="btn3">Isha'a - De noite</li>
+        </ul>
+    </div>
 
-		<div class="conteudo00">
-			<span class="fechar00">x</span>
-			<p>Fajr</p>
-			<p>Ao alvorecer</p>
-		</div>
-	</div>
+    <!-- Modal Template -->
+    <div id="modal-container" class="modal-container"></div>
 
-</div>
-
-	<div id="meumodal" class="pop">
-
-		<div class="conteudo">
-			<span class="fechar">x</span>
-			<p>Zhur</p>
-			<p>Ao meio-dia, depois do sol ter atingir o seu ponto máximo</p>
-		</div>
-	</div>
-
-	<!--terceiro modal-->
-	<div id="meumodal2" class="pop0">
-		<div class="conteudo1">
-			<span class="fechar1">x</span>
-				<p>Asr</p>
-				<p>Entre o meio-dia e o pôr do sol</p>
-		</div>
-	</div>
-
-	<!--quarto modal-->
-	<div id="meumodal3" class="pop1">
-		<div class="conteudo2">
-			<span class="fechar2">x</span>
-				<p>Maghrib</p>
-				<p>logo após o pôr do sol</p>
-		</div>
-	</div>
-
-	<!--quinto modal-->
-	<div id="meumodal4" class="pop2">
-		<div class="conteudo3">
-			<span class="fechar3">x</span>
-				<p>Isha'a</p>
-				<p>De noite, pelo menos uma hora e meia após o pôr do sol e antes da hora de fajr</p>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-md-8">
-				<p>Consistem na recitação de um conjunto de versículos do Alcorão, num ciclo de posições (em pé, curvado, de joelhos, prostrado e sentado) a que se chama de rakca (ou genuflexão); o número de genuflexões varia de acordo com a oração do dia. Estas orações não devem ser confundidas com as orações informais que os muçulmanos podem fazer quando sentem necessidade de pedir algo ou simplesmente conversar com Deus.</p>
-			</div>
-		</div>
-		
-	</div>
-<script>
-// Get the modal
-var modal = document.getElementById('meumodal0');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("fechar00")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
-<script type="text/javascript">
-	var secondModal =  document.getElementById('meumodal');
-	var abrir = document.getElementById('btn');
-	var clse =  document.getElementsByClassName('fechar')[0];
-
-
-	abrir.onclick = function(){
-		secondModal.style.display="block";
-	}
-
-	clse.onclick = function(){
-		secondModal.style.display = "none";
-	}
-</script>
-
-<!--terceiro modal-->
-
-<script type="text/javascript">
-	var terceiroModal = document.getElementById('meumodal2');
-	var abrir1 = document.getElementById('btn1');
-	var clse1 = document.getElementsByClassName('fechar1')[0];
-
-	abrir1.onclick = function(){
-		terceiroModal.style.display ="block";
-		
-	}
-
-	clse1.onclick = function(){
-		terceiroModal.style.display = "none";
-	}
-</script>
-
-<!--quarto modal-->
-
-<script type="text/javascript">
-	var quartoModal = document.getElementById('meumodal3');
-	var abrir2 = document.getElementById('btn2');
-	var clse2 = document.getElementsByClassName('fechar2')[0];
-
-	abrir2.onclick = function(){
-		quartoModal.style.display ="block";
-		
-	}
-
-	clse2.onclick = function(){
-		quartoModal.style.display = "none";
-	}
-</script>
-<!--Quinto Modal-->
-<script type="text/javascript">
-	var quintoModal = document.getElementById('meumodal4');
-	var abrir3 = document.getElementById('btn3');
-	var clse3= document.getElementsByClassName('fechar3')[0];
-
-	abrir3.onclick = function(){
-		quintoModal.style.display ="block";
-		
-	}
-
-	clse3.onclick = function(){
-		quintoModal.style.display = "none";
-	}
-</script>
-
-
+    <div class="container">
+        <p class="text-muted">Cada oração consiste em uma sequência de versículos do Alcorão e posturas específicas, chamadas rakca.</p>
+    </div>
 </body>
 </html>
